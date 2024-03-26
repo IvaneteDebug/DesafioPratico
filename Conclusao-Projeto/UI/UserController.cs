@@ -18,7 +18,7 @@ namespace Conclusao_Projeto.UI
             _userService = userService ?? throw new ArgumentNullException(nameof(userService));
             _logger = logger;
         }
-
+        // Cria um novo usuario.
         [HttpPost("CreateUser")]
         public IActionResult CreateUser(UserDTO user)
         {
@@ -41,7 +41,7 @@ namespace Conclusao_Projeto.UI
             }
         }
 
-        //Obtém os detalhes de um usuário com base no ID fornecido
+        //Obtém os detalhes de um usuário com base no ID fornecido.
         [HttpGet("{id}")]
         public IActionResult GetUserById(int id)
         {
@@ -59,7 +59,7 @@ namespace Conclusao_Projeto.UI
             }
         }
 
-        //Obtém uma lista de todos os usuários cadastrados no sistema
+        //Obtém uma lista de todos os usuários cadastrados.
         [HttpGet]
         public IActionResult GetAllUsers()
         {

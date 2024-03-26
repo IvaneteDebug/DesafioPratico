@@ -11,8 +11,17 @@ namespace Conclusao_Projeto.Domain
         public decimal Balance { get; set; }
         public UserType Type { get; set; }
 
-        public User(){}
-        public User(int id, string lastName, string firstName,string email, decimal balance, string password, UserType type)
+        public User() { }
+
+        public User(
+            int id,
+            string lastName,
+            string firstName,
+            string email,
+            decimal balance,
+            string password,
+            UserType type
+        )
         {
             Id = id;
             LastName = lastName;
@@ -22,8 +31,5 @@ namespace Conclusao_Projeto.Domain
             Password = password;
             Type = type;
         }
-        
-
-        
     }
 }

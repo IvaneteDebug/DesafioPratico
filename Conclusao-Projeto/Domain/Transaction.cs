@@ -1,5 +1,3 @@
-using System.ComponentModel.DataAnnotations;
-
 namespace Conclusao_Projeto.Domain
 {
     public class Transaction
@@ -9,6 +7,7 @@ namespace Conclusao_Projeto.Domain
         public User Sender { get; set; }
         public User Receiver { get; set; }
         public DateTime Timestamp { get; set; }
+
         public Transaction() { }
 
         public Transaction(decimal amount, User sender, User receiver)

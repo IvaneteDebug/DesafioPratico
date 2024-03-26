@@ -14,13 +14,14 @@ namespace Conclusao_Projeto.DTOs
 
         public UserDTO() { }
 
-        public UserDTO(string firstName, string document, string email, decimal balance,   UserType type)
+        public UserDTO(string firstName, string lastName, string document, string email, decimal balance, UserType type)
         {
             FirstName = firstName;
+            LastName = lastName;
             Document = document;
             Email = email;
             Balance = balance;
-            this.Type = type;
+            Type = type;
         }
     }
 }
